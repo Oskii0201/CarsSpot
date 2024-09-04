@@ -1,11 +1,23 @@
-export function MobileNavigation({ menuIsOpen,  setMenuIsOpen}) {
-    return(
+import { useEffect } from "react";
+
+export function MobileNavigation({ menuIsOpen, setMenuIsOpen }) {
+    useEffect(() => {
+        if (menuIsOpen) {
+            document.body.style.overflow = 'hidden';
+        } else {
+            document.body.style.overflow = 'auto';
+        }
+        return () => {
+            document.body.style.overflow = 'auto';
+        };
+    }, [menuIsOpen]);
+
+    return (
         <section
             id="mobile-menu"
-            className={`${menuIsOpen ? 'flex' : 'hidden'} absolute top-0 w-full origin-top animate-open-menu flex-col justify-center bg-white text-3xl`}
+            className={`${menuIsOpen ? 'flex' : 'hidden'} fixed top-[4rem] left-0 w-full origin-top animate-open-menu flex-col bg-white text-3xl z-30 min-h-[calc(100vh-4rem)] opacity-95`}
         >
-            <button className="self-end px-3 text-6xl" onClick={() => setMenuIsOpen(false)}>&times;</button>
-            <nav className="flex flex-col items-center py-8">
+            <nav className="flex flex-col items-center font-roboto">
                 <a
                     href="#gallery"
                     className="w-full py-6 text-center hover:opacity-90"
@@ -13,9 +25,10 @@ export function MobileNavigation({ menuIsOpen,  setMenuIsOpen}) {
                 >
                     Galeria zdjęć
                 </a>
-                <a href="#faq"
-                   className="w-full py-6 text-center hover:opacity-90"
-                   onClick={() => setMenuIsOpen(false)}
+                <a
+                    href="#faq"
+                    className="w-full py-6 text-center hover:opacity-90"
+                    onClick={() => setMenuIsOpen(false)}
                 >
                     FaQ
                 </a>
@@ -28,5 +41,5 @@ export function MobileNavigation({ menuIsOpen,  setMenuIsOpen}) {
                 </a>
             </nav>
         </section>
-    )
+    );
 }

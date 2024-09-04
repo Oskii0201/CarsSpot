@@ -73,6 +73,6 @@ To set up and run the CarsSpot project locally, follow these steps:
 
 ## Demo
 
-You can view the live demo of the project at: [CarsSpot Demo]([https://your-demo-link.com](https://carsspot-dybas.netlify.app/))
+You can view the live demo of the project at: [CarsSpot Demo](https://carsspot-dybas.netlify.app/)
 
 ---

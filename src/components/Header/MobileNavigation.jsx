@@ -15,9 +15,9 @@ export function MobileNavigation({ menuIsOpen, setMenuIsOpen }) {
     return (
         <section
             id="mobile-menu"
-            className={`${menuIsOpen ? 'flex' : 'hidden'} fixed top-[4rem] left-0 w-full origin-top animate-open-menu flex-col bg-white text-3xl z-30 min-h-[calc(100vh-4rem)]`}
+            className={`${menuIsOpen ? 'flex' : 'hidden'} fixed top-[4rem] left-0 w-full origin-top animate-open-menu flex-col bg-white text-3xl z-30 min-h-[calc(100vh-4rem)] opacity-95`}
         >
-            <nav className="flex flex-col items-center">
+            <nav className="flex flex-col items-center font-roboto">
                 <a
                     href="#gallery"
                     className="w-full py-6 text-center hover:opacity-90"

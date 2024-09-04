@@ -3,7 +3,7 @@ import shadow from "../../assets/shadow.png"
 import cars from "../../assets/cars.png"
 export function Hero(){
     return(
-        <section id="hero" className="relative py-10 overflow-hidden h-[560px] px-4 lg:px-0 lg:py-[120px] md:h-[730px] sm:h-[680px]">
+        <section id="hero" className="relative py-10 overflow-hidden h-[560px] px-4 lg:px-0 lg:py-[120px] md:h-[730px] sm:h-[680px] lg:h-[830px]">
             <div className="relative max-w-6xl mx-auto flex flex-col gap-12 z-10">
                 <article className="sm:w-1/2 gap-8 text-darkgray flex flex-col">
                     <h1 className="font-bebas text-5xl font-normal leading-[84px] tracking-[-0.04em] text-left sm:text-7xl">

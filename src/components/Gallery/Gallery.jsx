@@ -38,35 +38,35 @@ export function Gallery() {
                 modules={[Pagination, Navigation]}
                 className="mySwiper pb-12"
             >
-                <SwiperSlide key={index}>
+                <SwiperSlide>
                     <img
                         className="object-cover w-full h-96"
                         src={alfa}
                         alt={`Slide 1`}
                     />
                 </SwiperSlide>
-                <SwiperSlide key={index}>
+                <SwiperSlide>
                     <img
                         className="object-cover w-full h-96"
                         src={audi}
                         alt={`Slide 2`}
                     />
                 </SwiperSlide>
-                <SwiperSlide key={index}>
+                <SwiperSlide>
                     <img
                         className="object-cover w-full h-96"
                         src={maserati}
                         alt={`Slide 3`}
                     />
                 </SwiperSlide>
-                <SwiperSlide key={index}>
+                <SwiperSlide>
                     <img
                         className="object-cover w-full h-96"
                         src={porsche}
                         alt={`Slide 4`}
                     />
                 </SwiperSlide>
-                <SwiperSlide key={index}>
+                <SwiperSlide>
                     <img
                         className="object-cover w-full h-96"
                         src={street}

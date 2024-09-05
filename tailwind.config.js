@@ -31,6 +31,9 @@ export default {
         darkblue: '#0147FF',
         white: '#F7F7F7',
       },
+      screens: {
+        'sm': '576px',
+      },
     },
   },
   plugins: [],

@@ -5,7 +5,7 @@ export function GalleryHeader() {
     const linkStyles= "font-roboto font-normal text-[15px] leading-[22.5px] tracking-[-0.02em] cursor-pointer"
     const isActiveStyles = "text-darkblue border-b border-darkblue"
     return(
-        <section id="header" className="flex justify-center flex-col pt-20 max-w-6xl mx-auto px-4 lg:px-0">
+        <section id="header" className="flex justify-center flex-col pt-44 max-w-6xl mx-auto px-4 lg:px-0">
             <div className="gap-8 text-darkgray flex flex-col">
                 <div>
                     <span className="leading-8 text-21.5 text-darkblue font-roboto-condensed">Prezentacja firmy</span>

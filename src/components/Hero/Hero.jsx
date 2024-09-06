@@ -5,7 +5,7 @@ export function Hero(){
         <section id="hero" className="relative py-10 px-4 md:py-[120px] sm:py-28 lg:px-0">
             <div className="max-w-6xl mx-auto flex flex-col gap-12 z-10">
                 <article className="sm:w-1/2 gap-8 text-darkgray flex flex-col">
-                    <h1 className="font-bebas text-5xl font-normal leading-[84px] tracking-[-0.04em] text-left sm:text-7xl">
+                    <h1 className="font-bebas text-5xl font-normal leading-[84px] tracking-[-0.04em] text-left sm:text-7xl uppercase">
                         SPRZEDAJEMY SAMOCHODY Z EUROPY
                     </h1>
                     <p className="font-roboto-condensed text-base font-normal leading-6 text-left">
